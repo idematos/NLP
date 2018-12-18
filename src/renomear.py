@@ -35,4 +35,6 @@ def renomear(doc):
                 csf.append('<SÍMBOLO>')
             elif token.pos_ == 'X':
                 csf.append('<PALAVRA ESTRANGEIRA>')
+            elif token.pos_ == 'SPACE':
+                csf.append('<ESPAÇO>')
     return csf
