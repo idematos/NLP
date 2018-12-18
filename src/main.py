@@ -16,8 +16,9 @@ filtragem = open('filtragem.txt', 'w')
 for review in reviews:
     classificacao.write(review + '\n')
     lreview = review.lower()
-    doc = nlp(lreview)
-    classes = renomear(doc)
+    ldoc = nlp(lreview)
+    classes = renomear(ldoc)
+    doc = nlp(review)
     for i in range(len(classes)):
         classificacao.write(classes[i] + ' ')
         if i >= len(classes) - 2:
