@@ -1,14 +1,4 @@
 def renomear(doc):
-    """
-    @author Isabela Vegini de Matos
-    -----------------------------------------------------------------
-    Recebe um doc descrito em linguagem natural (PT-BR) e retorna uma
-    lista contendo a classificação gramatical de cada token do doc.
-    -----------------------------------------------------------------
-    @param doc: sequência de tokens
-    @return csf: lista de strings
-    """
-
     csf = []
     for token in doc:
             if token.pos_ == 'NOUN' or token.pos_ == 'PROPN':
